@@ -1,0 +1,24 @@
+{
+  "schemaVersion": 1,
+  "id": "spotifyhud",
+  "version": "${version}",
+  "name": "Spotify HUD",
+  "description": "Shows and controls Spotify inside Minecraft using the media info Spotify already shares with Windows. No Spotify account, API key or login needed. Windows only.",
+  "authors": ["You"],
+  "license": "MIT",
+  "icon": "assets/spotifyhud/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": ["com.spotifyhud.SpotifyHudMod"],
+    "modmenu": ["com.spotifyhud.SpotifyHudModMenu"]
+  },
+  "depends": {
+    "fabricloader": ">=0.19.1",
+    "minecraft": ">=26.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "modmenu": "*"
+  }
+}
